@@ -3,5 +3,8 @@ package main
 func main() {
 	// var card string = "Ace of Spades"
 	cards := newDeck()
-	cards.print()
+
+	hand, remainDeck := deal(cards, 5)
+	hand.print()
+	remainDeck.print()
 }
