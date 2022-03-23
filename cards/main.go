@@ -2,9 +2,9 @@ package main
 
 func main() {
 	// var card string = "Ace of Spades"
-	cards := newDeck()
+	// cards := newDeck()
+	// cards.saveToFile("test_deck")
 
-	hand, remainDeck := deal(cards, 5)
-	hand.print()
-	remainDeck.print()
+	cards := newDeckFromFile("test_deck2")
+	cards.print()
 }
